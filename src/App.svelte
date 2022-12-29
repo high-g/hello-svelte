@@ -2,6 +2,7 @@
   import Counter from './components/Counter.svelte'
   import Text from './components/Text.svelte'
   const name = 'コンポーネント内で定義した変数'
+  let bindName = 'aaa'
 </script>
 
 <main>
@@ -12,6 +13,10 @@
   <div>
     <Text name="test1" />
     <Text name="test2" />
+  </div>
+
+  <div>
+    <input type="text" bind:value={bindName} />
   </div>
 
   <div class="card">
